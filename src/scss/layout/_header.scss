@@ -9,8 +9,13 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: url("../images/cover.jpg") no-repeat center top;
+  background-image: url("../images/cover.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
   height: 100vh;
+  width: 100%;
+
   &__menu {
     &--link {
       padding: 10px;
@@ -26,26 +31,26 @@
     text-align: center;
     margin-right: 15px;
     margin-left: 15px;
-    font-family: $font-title;
     color: $color-white;
-    /* height: 50%; */
+
     position: absolute;
     top: 50%;
     &--title {
+      font-family: $font-title;
       font-size: 42px;
-
       text-transform: uppercase;
     }
     &--text {
       margin-top: 20px;
       margin-bottom: 50px;
-      /*falta el tamaño de font*/
+      font-family: $font-text;
+      font-size: 16px;
     }
     &--button {
       background-color: $color-white;
       display: inline;
-      padding: 10px;
-      border-radius: 20px;
+      padding: 16px;
+      border-radius: 35px;
     }
   }
 }
