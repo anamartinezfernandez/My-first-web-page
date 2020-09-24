@@ -1,4 +1,32 @@
-<header class="page__header">
-  <img src="./assets/images/logo-adalab.png" alt="Adalab">
-  <h1>@@title</h1>
+<header class="header"> <!-- la clase la he cambiado -->
+	<div class="header__menu" id="top">
+		<include 
+			src="./link.html"
+			aClass="header__menu--link" 
+			urlLink="https://adalab.es/" 
+			relLink="Web de Adalab"
+			titleLink="Ir a la web de Adalab" urlImage="./assets/images/ico-menu.svg" 
+			altImage="Menú principal" 
+			titleImage="Menú desplegable"
+		></include>
+	</div>
+	<div class="header__hero">
+		<h1 class="header_hero--title">
+			<span>Anonymous</span>
+			<span>proxy</span>
+		</h1>
+		<p class="header__hero--text">In hac habitasse platea dictumst</p>
+		<div class="header__hero--button">
+			<include 
+				src="./link.html"
+				aClass="" 
+				urlLink="#reasons 
+				relLink="Reasons" 
+				titleLink="Ir a la sección Reasons" urlImage="./assets/images/ico-scroll-down.svg" 
+				altImage="Enlace a Reasons" titleImage="Enlace a Reasons"
+			></include>
+		</div>
+	</div>
 </header>
+
+<!-- duda con alt y titles de enlaces e imágenes -->
