@@ -1,12 +1,8 @@
-/* /no está bien centrado */
 .aside {
   background-color: $color-aside;
-  padding: 0 15px;
+  padding: 30px 15px 60px 15px;
   height: 624px;
   text-align: center;
-  line-height: 30px;
-  font-size: 18px;
-  padding-top: 30px;
   &__title {
     text-transform: capitalize;
     font-family: $font-title;
@@ -14,23 +10,28 @@
   }
   &__textWrapper {
     display: grid;
-    height: 480px;
+    height: 414px;
     grid-template-columns: 1fr;
     grid-template-rows: 3;
     &--text {
-      margin: 28px 50px;
+      padding: 45px 55px 0 55px;
     }
   }
   &__button {
     width: 184px;
     height: 45px;
+    margin-top: 45px;
     font-weight: 700;
     color: $color-white;
     background-color: $color-tertiary;
-    border: 2px solid $color-tertiary;
+    border: 2px solid;
     border-radius: 30px;
     font-size: 20px;
     line-height: 45px;
+    transition: background-color 1s ease;
+    &:hover {
+      background-color: $color-footer;
+    }
   }
   /* mirar el font aquí  y mirar márgenes en general*/
 }
