@@ -8,12 +8,12 @@
   color: $color-white;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   @media all and (min-width: 768px) {
     height: 240px;
     padding: 45px 39px;
-    align-items: inherit;
+    /* align-items: inherit; */
   }
   @media all and (min-width: 1280px) {
     height: 240px;
@@ -23,9 +23,9 @@
     background-color: $color-white;
     width: 45px;
     height: 45px;
+    /* position: relative; 
+    margin-top: -20px; Aqui*/
     border-radius: 50%;
-    position: relative;
-    top: -30px;
     animation-name: turns;
     animation-duration: 3s;
     animation-iteration-count: infinite;
@@ -90,7 +90,7 @@
     font-size: 20px;
   }
 }
-@keyframes turns {
+/* @keyframes turns {
   from {
     transform: rotate (0);
   }
@@ -104,3 +104,4 @@
     transform: rotate(0deg);
   }
 }
+ */
