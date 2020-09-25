@@ -2,7 +2,7 @@
 	<div class="footer__button">
 		<include
 		src="./link.html" 
-		aClass="footer__button-link"
+		aClass="footer__button--link"
 		urlLink="#top 
 		relLink="Inicio" 
 		titleLink="Ir al inicio de la página" 
@@ -10,57 +10,52 @@
 		altImage="Ir al inicio de la página" titleImage="Enlace a inicio"
 		></include>
 	</div>
-	<div class="footer__wrapper">
-		<div class="footer__small">
-			<span>
-				<small>&copy; 2017</small>
-			</span> 
-			<span>
-				<small>We
-					<i class="fas fa-heart"></i>Components 
-				</small>
-			</span> 
-		</div>
-		<nav class="footer__list">
+	<div class="footer__menuWrapper">
+		<nav class="footer__menuWrapper--primary">
 			<ul>
-				<li>    
+				<li class="footer__item">    
 					<include 
 					src="./link.html"
+					aClass="footer__item--link"
 					urlLink="https://adalab.es/" relLink="Web de Adalab"
 					titleLink="Ir a la web de Adalab"
 					text="Articles"
 					></include>
 				</li>
-				<li>    
+				<li class="footer__item">    
 					<include 
 					src="./link.html"
+					aClass="footer__item--link"
 					urlLink="https://adalab.es/" 
 					relLink="Web de Adalab"
 					titleLink="Ir a la web de Adalab"
 					text="Books"
 					></include>
 				</li>
-				<li>    
+				<li class="footer__item">    
 					<include 
 					src="./link.html"
+					aClass="footer__item--link"
 					urlLink="https://adalab.es/" 
 					relLink="Web de Adalab"
 					titleLink="Ir a la web de Adalab"
 					text="Events"
 					></include>
 				</li>
-				<li>    
+				<li class="footer__item">    
 					<include 
 					src="./link.html"
+					aClass="footer__item--link"
 					urlLink="https://adalab.es/" 
 					relLink="Web de Adalab"
 					titleLink="Ir a la web de Adalab"
 					text="Reasons"
 					></include>
 				</li>
-				<li>    
+				<li class="footer__item">    
 					<include 
 					src="./link.html"
+					aClass="footer__item--link"
 					urlLink="https://adalab.es/" 
 					relLink="Web de Adalab"
 					titleLink="Ir a la web de Adalab"
@@ -69,35 +64,48 @@
 				</li>
 			</ul>
 		</nav>
-		<nav class="footer__list">
+		<nav class="footer__menuWrapper--secondary">
 			<ul>
-				<li>    
+				<li class="footer__item">    
 					<include 
 					src="./link.html"
+					aClass="footer__item--link"
 					urlLink="https://adalab.es/" 
 					relLink="Web de Adalab"
 					titleLink="Ir a la web de Adalab"
 					text="Twitter"
 					></include>
 				</li>
-				<li>    
+				<li class="footer__item">    
 					<include 
 					src="./link.html"
+					aClass="footer__item--link"
 					urlLink="https://adalab.es/" relLink="Web de Adalab"
 					titleLink="Ir a la web de Adalab"
 					text="Instagram"
 					></include>
 				</li>
-				<li>    
+				<li class="footer__item">    
 					<include 
 					src="./link.html"
+					aClass="footer__item--link"
 					urlLink="https://adalab.es/" relLink="Web de Adalab"
 					titleLink="Ir a la web de Adalab"
-					text="Mastodoon.social"
+					text="Mastodon.social"
 					></include>
 				</li>
 			</ul>
 		</nav>
+		<div class="footer__menuWrapper--small">
+			<span class="footer__item--small">
+				<small>&copy;2017</small>
+			</span> 
+			<span class="footer__item--small"> 
+				<small>We 
+					<i class="fas fa-heart"></i> components 
+				</small>
+			</span> 
+		</div>
 	</div>	
 </footer>
 							

@@ -1,14 +1,78 @@
-/* .page__footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100vw;
-  padding: 1rem;
-  color: $color-secondary;
-} mirar
- */
-
 .footer {
-  background-color: yellow;
-  bottom: 0px;
+  background-color: $color-footer;
+  height: 465px;
+  padding: 0 15px;
+  font-family: $font-text;
+  line-height: 30px;
+  font-size: 16px;
+  color: $color-white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__button {
+    background-color: $color-white;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    transform: translate(0, -70%);
+    animation-name: turns;
+    animation-duration: 3s;
+
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+
+    &--link {
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+    }
+  }
+  &__menuWrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    &--secondary {
+      margin-top: 30px;
+    }
+    &--small {
+      margin-top: 30px;
+      margin-bottom: 45px;
+    }
+  }
+  &__item {
+    list-style: none;
+
+    &--link {
+      color: white;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    &--small {
+      display: block;
+      text-transform: lowercase;
+    }
+  }
+}
+
+.fa-heart {
+  color: $color-tertiary;
+  transition: font-size ease 1s;
+  &:hover {
+    font-size: 20px;
+  }
+}
+@keyframes turns {
+  from {
+    transform: translate(0, -70%) rotate (0);
+  }
+  40% {
+    transform: rotate(360deg);
+  }
+  80% {
+    transform: rotate(-360deg);
+  }
+  to {
+    transform: translate(0, -70%) rotate(0deg);
+  }
 }

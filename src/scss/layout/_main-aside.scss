@@ -1,13 +1,13 @@
 /* /no está bien centrado */
 .aside {
-  background-color: green;
+  background-color: $color-aside;
+  padding: 0 15px;
   height: 624px;
   text-align: center;
-  font-family: $font-text;
   line-height: 30px;
   font-size: 18px;
+  padding-top: 30px;
   &__title {
-    margin-top: 30px;
     text-transform: capitalize;
     font-family: $font-title;
     font-size: 24px;
