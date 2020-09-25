@@ -59,6 +59,7 @@
     &--title {
       @media all and (min-width: 768px) {
         font-size: 24px;
+        margin-bottom: 14px;
       }
     }
     &--text {
@@ -89,5 +90,4 @@
       background-color: $color-footer;
     }
   }
-  /* mirar el font aquí  y mirar márgenes en general*/
 }
