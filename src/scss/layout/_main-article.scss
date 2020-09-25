@@ -2,11 +2,23 @@
   height: 376px;
   background-color: white;
   padding: 0 15px;
+  @media all and (min-width: 768px) {
+    height: 330px;
+    padding: 0 60px;
+  }
+  @media all and (min-width: 1280px) {
+    height: 360px;
+    padding: 0 275px;
+  }
   &__small {
     display: inline-block;
     margin-top: 30px;
     color: $color-secondary;
     font-size: 14px;
+    @media all and (min-width: 1280px) {
+      margin-top: 60px;
+      font-size: 16px;
+    }
   }
   &__title {
     width: 75%;
@@ -15,9 +27,20 @@
     font-size: 24px;
     font-family: $font-title;
     text-transform: capitalize;
+    @media all and (min-width: 768px) {
+      margin-bottom: 30px;
+      font-size: 26px;
+      line-height: 45px;
+    }
+    @media all and (min-width: 1280px) {
+      font-size: 32px;
+    }
   }
   &__text {
     margin-bottom: 30px;
+    @media all and (min-width: 768px) {
+      font-size: 20px;
+    }
   }
   &__button {
     width: 75px;
@@ -32,6 +55,12 @@
     border-radius: 30px;
     border: 2px solid $color-tertiary;
     transition: background-color ease 1s;
+    @media all and (min-width: 768px) {
+      width: 91px;
+    }
+    @media all and (min-width: 1280px) {
+      width: 160px;
+    }
     &:hover {
       background-color: $color-tertiary;
     }

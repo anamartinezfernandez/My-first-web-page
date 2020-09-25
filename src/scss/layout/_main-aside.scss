@@ -3,18 +3,64 @@
   padding: 30px 15px 60px 15px;
   height: 624px;
   text-align: center;
+  @media all and (min-width: 768px) {
+    padding: 30px 40px 60px 35px;
+    height: 397px;
+  }
+  @media all and (min-width: 1280px) {
+    padding: 60px 85px 60px 81px;
+    height: 427px;
+  }
   &__title {
     text-transform: capitalize;
     font-family: $font-title;
     font-size: 24px;
+    @media all and (min-width: 768px) {
+      font-size: 26px;
+      line-height: 45px;
+    }
+    @media all and (min-width: 1280px) {
+      font-size: 32px;
+    }
   }
   &__textWrapper {
     display: grid;
     height: 414px;
+    padding: 45px 55px 0 55px;
     grid-template-columns: 1fr;
     grid-template-rows: 3;
+    @media all and (min-width: 768px) {
+      box-sizing: content-box;
+      height: 112px;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr;
+      padding: 45px 0 60px 0;
+    }
+    /*falta mediquerie de tablet*/
+    &--article1 {
+      @media all and (min-width: 768px) {
+        grid-column: 1/2;
+      }
+    }
+    &--article2 {
+      @media all and (min-width: 768px) {
+        grid-column: 2/3;
+      }
+    }
+    &--article3 {
+      @media all and (min-width: 768px) {
+        grid-column: 3/4;
+      }
+    }
+    &--title {
+      @media all and (min-width: 768px) {
+        font-size: 24px;
+      }
+    }
     &--text {
-      padding: 45px 55px 0 55px;
+      @media all and (min-width: 768px) {
+        font-size: 20px;
+      }
     }
   }
   &__button {
