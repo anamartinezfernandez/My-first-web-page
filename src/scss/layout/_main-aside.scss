@@ -1,15 +1,12 @@
 .aside {
   background-color: $color-aside;
   padding: 30px 15px 60px 15px;
-  height: 624px;
   text-align: center;
   @media all and (min-width: 768px) {
     padding: 30px 40px 60px 35px;
-    height: 397px;
   }
   @media all and (min-width: 1280px) {
     padding: 60px 85px 60px 81px;
-    height: 427px;
   }
   &__title {
     text-transform: capitalize;

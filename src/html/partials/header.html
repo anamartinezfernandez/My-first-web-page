@@ -1,5 +1,5 @@
 <header class="header">
-  <div class="header__menu" id="top">
+  <nav class="header__menu" id="top">
     <include
       src="./link.html"
       aClass="header__menu--link"
@@ -10,24 +10,24 @@
       altImage="Menú principal"
       titleImage="Menú desplegable"
     ></include>
+  </nav>
+  <!-- <div class="header__hero"> -->
+  <h1 class="header__heroTitle">
+    <span>Anonymous</span>
+    <span>proxy</span>
+  </h1>
+  <p class="header__heroText">In hac habitasse platea dictumst.</p>
+  <div class="header__heroButton">
+    <include
+      src="./link.html"
+      aClass="header__heroButton--Link"
+      urlLink="#reasons"
+      relLink="Reasons"
+      titleLink="Ir a la sección Reasons"
+      urlImage="./assets/images/ico-scroll-down.svg"
+      altImage="Enlace a Reasons"
+      titleImage="Enlace a Reasons"
+    ></include>
   </div>
-  <div class="header__hero">
-    <h1 class="header__hero--title">
-      <span> Anonymous </span>
-      <span> proxy </span>
-    </h1>
-    <p class="header__hero--text">In hac habitasse platea dictumst.</p>
-    <div class="header__hero--button">
-      <include
-        src="./link.html"
-        aClass="header__hero--buttonLink"
-        urlLink="#reasons"
-        relLink="Reasons"
-        titleLink="Ir a la sección Reasons"
-        urlImage="./assets/images/ico-scroll-down.svg"
-        altImage="Enlace a Reasons"
-        titleImage="Enlace a Reasons"
-      ></include>
-    </div>
-  </div>
+  <!--   </div> -->
 </header>

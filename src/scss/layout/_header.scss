@@ -4,7 +4,11 @@
   background-size: cover;
   background-position: center top;
   height: 100vh;
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  color: $color-white;
   &__menu {
     &--link {
       padding: 10px;
@@ -14,63 +18,55 @@
       left: 0;
     }
   }
-  &__hero {
+  &__heroTitle {
+    font-family: $font-title;
+    font-size: 42px;
+    line-height: 55px;
+    text-transform: uppercase;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: space-between;
     text-align: center;
-    margin: 0 15px;
-    color: $color-white;
-    position: relative;
-    top: 50%;
     @media all and (min-width: 768px) {
-      margin: 0 39px;
+      font-size: 80px;
+      line-height: 106px;
     }
     @media all and (min-width: 1280px) {
-      margin: 0 275px;
+      font-size: 100px;
+      line-height: 132px;
     }
-    &--title {
-      width: 290px;
-      font-family: $font-title;
-      font-size: 42px;
-      line-height: 55px;
-      text-transform: uppercase;
-      @media all and (min-width: 768px) {
-        width: 690px;
-        font-size: 80px;
-        line-height: 106px;
-      }
-      @media all and (min-width: 1280px) {
-        width: 730px;
-        font-size: 100px;
-        line-height: 132px;
-      }
+  }
+  &__heroText {
+    margin-top: 10px;
+    font-family: $font-text;
+    font-size: 16px;
+    @media all and (min-width: 768px) {
+      font-size: 24px;
+      margin-top: 20px;
     }
-    &--text {
-      margin-top: 10px;
+    @media all and (min-width: 1280px) {
+      margin-top: 0;
+    }
+  }
+  &__heroButton {
+    background-color: $color-white;
+    display: flex;
+    justify-content: center;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    margin-top: 45px;
+    margin-bottom: 53px;
+    @media all and (min-width: 768px) {
+      margin-top: 30px;
       margin-bottom: 45px;
-      font-family: $font-text;
-      font-size: 16px;
-      @media all and (min-width: 768px) {
-        font-size: 24px;
-        margin-top: 20px;
-        margin-bottom: 30px;
-      }
-      @media all and (min-width: 1280px) {
-        margin-top: 0;
-      }
     }
-    &--button {
-      background-color: $color-white;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      height: 45px;
-      width: 45px;
-      border-radius: 50%;
+    @media all and (min-width: 1280px) {
+      margin-bottom: 5px;
     }
-    &--buttonLink {
+    &--Link {
       padding: 16px;
+      margin-top: 1px;
     }
   }
 }

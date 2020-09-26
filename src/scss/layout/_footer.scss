@@ -1,30 +1,27 @@
 .footer {
   background-color: $color-footer;
-  height: 465px;
-  padding: 60px 15px 45px 15px;
+  padding: 10px 15px 0 15px;
   font-family: $font-text;
-  line-height: 30px;
   font-size: 16px;
   color: $color-white;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  text-align: center;
   @media all and (min-width: 768px) {
-    height: 240px;
-    padding: 45px 39px;
-    /* align-items: inherit; */
+    padding: 10px 39px 0 39px;
   }
   @media all and (min-width: 1280px) {
-    height: 240px;
-    padding: 45px 370px;
+    padding: 10px 370px 0 370px;
   }
   &__button {
     background-color: $color-white;
     width: 45px;
     height: 45px;
-    /* position: relative; 
-    margin-top: -20px; Aqui*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(0, -70%);
     border-radius: 50%;
     animation-name: turns;
     animation-duration: 3s;
@@ -43,46 +40,63 @@
       justify-content: center;
     }
   }
-  &__menuWrapper {
+  &__content {
     display: flex;
     flex-direction: column;
-    text-align: center;
+    line-height: 30px;
+    width: 100%;
     @media all and (min-width: 768px) {
-      flex-direction: row-reverse;
+      display: flex;
+      flex-direction: row;
       justify-content: space-between;
       text-align: left;
+      margin-bottom: 45px;
     }
-    &--secondary {
+    @media all and (min-width: 1280px) {
+      justify-content: center;
+    }
+    &--menuPrimary {
+      @media all and (min-width: 768px) {
+        margin: 0 70px;
+        justify-content: space-between;
+      }
+    }
+    &--menuSecondary {
       margin-top: 30px;
       @media all and (min-width: 768px) {
-        margin: 0 30px;
-        order: -1;
+        margin-top: 0;
       }
     }
     &--small {
+      display: flex;
+      flex-direction: column;
       margin-top: 30px;
       font-size: 14px;
+      line-height: 30px;
+      margin-bottom: 45px;
       @media all and (min-width: 768px) {
         margin-top: 0;
+        order: -1;
+      }
+      &-item {
+        text-align: center;
+        text-transform: lowercase;
+        @media all and (min-width: 768px) {
+          text-align: left;
+        }
       }
     }
   }
   &__item {
     list-style: none;
-
     &--link {
       color: white;
       padding: 10px;
       text-decoration: none;
       text-transform: uppercase;
     }
-    &--small {
-      display: block;
-      text-transform: lowercase;
-    }
   }
 }
-
 .fa-heart {
   color: $color-tertiary;
   transition: font-size ease 1s;
@@ -90,7 +104,7 @@
     font-size: 20px;
   }
 }
-/* @keyframes turns {
+@keyframes turns {
   from {
     transform: rotate (0);
   }
@@ -104,4 +118,3 @@
     transform: rotate(0deg);
   }
 }
- */
