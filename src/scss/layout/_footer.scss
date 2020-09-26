@@ -24,16 +24,8 @@
     transform: translate(0, -70%);
     border-radius: 50%;
     animation-name: turns;
-    animation-duration: 3s;
+    animation-duration: 4s;
     animation-iteration-count: infinite;
-    animation-timing-function: ease;
-    @media all and (min-width: 768px) {
-      top: -20px;
-      left: 320px;
-    }
-    @media all and (min-width: 1280px) {
-      left: 240px;
-    }
     &--link {
       padding: 10px;
       display: flex;
@@ -58,7 +50,6 @@
     &--menuPrimary {
       @media all and (min-width: 768px) {
         margin: 0 70px;
-        justify-content: space-between;
       }
     }
     &--menuSecondary {
@@ -106,15 +97,15 @@
 }
 @keyframes turns {
   from {
-    transform: rotate (0);
+    transform: translate(0, -70%) rotate(0deg);
   }
   40% {
-    transform: rotate(360deg);
+    transform: translate(0, -110%) rotate(360deg);
   }
   80% {
-    transform: rotate(-360deg);
+    transform: translate(0, -110%) rotate(360deg);
   }
   to {
-    transform: rotate(0deg);
+    transform: translate(0, -70%) rotate(0deg);
   }
 }

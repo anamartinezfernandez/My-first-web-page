@@ -17,25 +17,25 @@
   <body>
     <div class="page">
       <header class="header">
-        <div class="header__menu" id="top">
+        <nav class="header__menu" id="top">
           <a class="header__menu--link" href="https://adalab.es/" rel="Web de Adalab" title="Ir a la web de Adalab">
             <img src="./assets/images/ico-menu.svg" alt="Menú principal" title="Menú desplegable" />
           </a>
 
-        </div>
-        <div class="header__hero">
-          <h1 class="header__hero--title">
-            <span> Anonymous </span>
-            <span> proxy </span>
-          </h1>
-          <p class="header__hero--text">In hac habitasse platea dictumst.</p>
-          <div class="header__hero--button">
-            <a class="header__hero--buttonLink" href="#reasons" rel="Reasons" title="Ir a la sección Reasons">
-              <img src="./assets/images/ico-scroll-down.svg" alt="Enlace a Reasons" title="Enlace a Reasons" />
-            </a>
+        </nav>
+        <!-- <div class="header__hero"> -->
+        <h1 class="header__heroTitle">
+          <span>Anonymous</span>
+          <span>proxy</span>
+        </h1>
+        <p class="header__heroText">In hac habitasse platea dictumst.</p>
+        <div class="header__heroButton">
+          <a class="header__heroButton--Link" href="#reasons" rel="Reasons" title="Ir a la sección Reasons">
+            <img src="./assets/images/ico-scroll-down.svg" alt="Enlace a Reasons" title="Enlace a Reasons" />
+          </a>
 
-          </div>
         </div>
+        <!--   </div> -->
       </header>
 
       <main class="main">
@@ -83,9 +83,9 @@
           </a>
 
         </div>
-        <div class="footer__menuWrapper">
-          <nav class="footer__menuWrapper--primary">
-            <ul>
+        <div class="footer__content">
+          <nav>
+            <ul class="footer__content--menuPrimary">
               <li class="footer__item">
                 <a class="footer__item--link" href="https://adalab.es/" rel="Web de Adalab" title="Ir a la web de Adalab">
                   <img src="" alt="" title="" />Articles
@@ -118,8 +118,8 @@
               </li>
             </ul>
           </nav>
-          <nav class="footer__menuWrapper--secondary">
-            <ul>
+          <nav>
+            <ul class="footer__content--menuSecondary">
               <li class="footer__item">
                 <a class="footer__item--link" href="https://adalab.es/" rel="Web de Adalab" title="Ir a la web de Adalab">
                   <img src="" alt="" title="" />Twitter
@@ -140,14 +140,12 @@
               </li>
             </ul>
           </nav>
-          <div class="footer__menuWrapper--small">
-            <span class="footer__item--small">
-              <small>&copy;2017</small>
-            </span>
-            <span class="footer__item--small">
-              <small>We <i class="fas fa-heart"></i> components </small>
-            </span>
-          </div>
+          <small class="footer__content--small">
+            <span class="footer__content--small-item">&copy;2017</span>
+            <span class="footer__content--small-item"
+              >We <i class="fas fa-heart"></i> components</span
+            >
+          </small>
         </div>
       </footer>
 
